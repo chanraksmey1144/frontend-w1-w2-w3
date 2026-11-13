@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f3f6fb">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="./Js%20Basic%20Five.css">
+    <script src="./random.js" defer></script>
+</head>
+<body>
+    <main class="app-card">
+        <header class="app-header">
+            <div class="brand-mark" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+            </div>
+            <p class="brand-name">NUMBER STUDIO</p>
+            <span class="live-badge"><span></span> Ready to roll</span>
+        </header>
+
+        <section class="hero" aria-labelledby="page-title">
+            <p class="eyebrow">A little randomness goes a long way</p>
+            <h1 id="page-title">Random number<br><span>generator</span></h1>
+            <p class="intro">Pick your range, choose how many, and let chance take it from here.</p>
+        </section>
+
+        <form id="generator-form" class="controls" aria-labelledby="settings-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">MAKE IT YOURS</p>
+                    <h2 id="settings-title">Your settings</h2>
+                </div>
+                <span class="step-badge">01 <span>/ 02</span></span>
+            </div>
+
+            <div class="range-controls">
+                <label class="field" for="min-range">
+                    <span class="field-label">From</span>
+                    <span class="input-wrap">
+                        <span class="input-prefix" aria-hidden="true">MIN</span>
+                        <input id="min-range" type="number" value="1" step="1" inputmode="numeric" aria-describedby="range-help">
+                    </span>
+                </label>
+                <label class="field" for="max-range">
+                    <span class="field-label">To</span>
+                    <span class="input-wrap">
+                        <span class="input-prefix" aria-hidden="true">MAX</span>
+                        <input id="max-range" type="number" value="100" step="1" inputmode="numeric" aria-describedby="range-help">
+                    </span>
+                </label>
+            </div>
+
+            <div class="preset-row" aria-label="Quick range presets">
+                <span class="preset-label">Quick pick</span>
+                <button class="preset-button" type="button" data-min="1" data-max="10">1–10</button>
+                <button class="preset-button is-active" type="button" data-min="1" data-max="100" aria-pressed="true">1–100</button>
+                <button class="preset-button" type="button" data-min="-50" data-max="50">−50–50</button>
+            </div>
+
+            <div class="count-row">
+                <label for="count-select">How many numbers?</label>
+                <select id="count-select">
+                    <option value="10" selected>10 numbers</option>
+                    <option value="20">20 numbers</option>
+                    <option value="50">50 numbers</option>
+                </select>
+            </div>
+
+            <p id="range-help" class="range-help">Whole numbers only. The limits are included in your results.</p>
+            <p id="message" class="message" role="status" aria-live="polite"></p>
+
+            <button id="generate-btn" class="generate-button" type="submit">
+                <span>Generate numbers</span>
+                <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+        </form>
+
+        <section class="results" aria-labelledby="results-title">
+            <div class="results-heading">
+                <div>
+                    <p class="eyebrow">THE GOOD STUFF</p>
+                    <h2 id="results-title">Your numbers</h2>
+                    <p id="range-summary" class="range-summary">
+                        From <strong id="min-value">1</strong> to <strong id="max-value">100</strong>, inclusive
+                    </p>
+                </div>
+                <button id="copy-btn" class="copy-button" type="button" disabled>
+                    <span aria-hidden="true">▣</span><span>Copy</span>
+                </button>
+            </div>
+
+            <p id="results-count" class="results-count" role="status" aria-live="polite">Your results will appear here</p>
+            <div id="empty-state" class="empty-state">
+                <span class="empty-icon" aria-hidden="true">?</span>
+                <p>Ready when you are</p>
+                <span>Choose your settings and hit generate.</span>
+            </div>
+            <div id="numbers-container" class="numbers" aria-label="Generated numbers" hidden></div>
+        </section>
+
+        <footer class="app-footer">
+            <span>Made for decisions, games &amp; curious minds</span>
+            <span class="footer-sparkle" aria-hidden="true">✦</span>
+        </footer>
+    </main>
+</body>
+</html>

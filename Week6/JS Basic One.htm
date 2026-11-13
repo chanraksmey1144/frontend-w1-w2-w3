@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> JavaScript — Basic One</title>
+  <style> input, p {border-radius:4px; background:dodgerblue;color:white;padding:4px;text-align:center;} </style>
+  <link rel="stylesheet" href="/Week6/exxternal.js">
+</head>
+<body>
+<h1>មូលដ្ឋានបឋមនៃ JavaScript</h1>
+<h2>ថែម JavaScript</h2>
+<h3>1. inline script</h3>
+<input   value="សារជូនដំណឹង!" onclick="alert('សូមស្វាគមន៍មកកាន់ JavaScript!')" />
+<h3>2. internal script</h3>
+<p id="is">ខ្លឹមសារ p ​ត្រូវចាន​ថែមដោ internal script. </p>
+
+
+<h3>3. External scriptt</h3>
+<p id="es">ខ្លឹមសារ p ​ត្រូវចាន​ថែមដោ external script. </p>
+
+
+</body>
+<script>
+    document.getElementById("is").innerHTML = "ខ្លឹមសារ p ​ត្រូវចាន​ថែមដោ external script. ";
+</script>
+</html>

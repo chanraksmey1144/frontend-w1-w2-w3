@@ -1,0 +1,15 @@
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\bin\Debug\net10.0\csharp-run.exe
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\bin\Debug\net10.0\csharp-run.deps.json
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\bin\Debug\net10.0\csharp-run.runtimeconfig.json
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\bin\Debug\net10.0\csharp-run.dll
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\bin\Debug\net10.0\csharp-run.pdb
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\csharp-run.GeneratedMSBuildEditorConfig.editorconfig
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\csharp-run.AssemblyInfoInputs.cache
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\csharp-run.AssemblyInfo.cs
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\csharp-run.csproj.CoreCompileInputs.cache
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\csharp-run.sourcelink.json
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\csharp-run.dll
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\refint\csharp-run.dll
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\csharp-run.pdb
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\csharp-run.genruntimeconfig.cache
+D:\School_RUPP\Year_3\Frontend Web Dev\csharp-run\obj\Debug\net10.0\ref\csharp-run.dll

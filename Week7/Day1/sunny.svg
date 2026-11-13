@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Sun">
+  <circle cx="80" cy="80" r="31" fill="#ffc928"/>
+  <g stroke="#f59e0b" stroke-linecap="round" stroke-width="8">
+    <path d="M80 12v17M80 131v17M12 80h17M131 80h17M32 32l12 12M116 116l12 12M128 32l-12 12M44 116l-12 12"/>
+  </g>
+</svg>

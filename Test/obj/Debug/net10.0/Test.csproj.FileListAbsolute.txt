@@ -1,0 +1,15 @@
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\bin\Debug\net10.0\Test.exe
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\bin\Debug\net10.0\Test.deps.json
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\bin\Debug\net10.0\Test.runtimeconfig.json
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\bin\Debug\net10.0\Test.dll
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\bin\Debug\net10.0\Test.pdb
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\Test.AssemblyInfoInputs.cache
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\Test.AssemblyInfo.cs
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\Test.csproj.CoreCompileInputs.cache
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\Test.sourcelink.json
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\Test.dll
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\refint\Test.dll
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\Test.pdb
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\Test.genruntimeconfig.cache
+D:\School_RUPP\Year_3\Frontend Web Dev\Test\obj\Debug\net10.0\ref\Test.dll

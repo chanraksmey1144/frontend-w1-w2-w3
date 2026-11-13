@@ -1,0 +1,80 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 200ms ease, color 200ms ease;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+body.silver {
+    background-color: #c0c0c0;
+    color: #222;
+}
+
+body.orange {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+body.blue {
+    background-color: #001f3f;
+    color: #e0f7ff;
+}
+
+body.sunny {
+    background-color: #fdf6c3;
+    color: #333;
+}
+
+body.rainy {
+    background-color: #9ecafc;
+    color: #0b1d3a;
+}
+
+#imgWeather {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 1.5rem auto;
+}
+
+#btnSwitch {
+    padding: 0.75rem 1rem;
+    border: 0;
+    border-radius: 0.35rem;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+body.rainy #btnSwitch {
+    background-color: #0066cc;
+}
+
+fieldset {
+    max-width: 24rem;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border: 1px solid currentColor;
+    border-radius: 0.35rem;
+}
+
+fieldset label {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+#btnApply {
+    padding: 0.75rem 1rem;
+    border: 0;
+    border-radius: 0.35rem;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
