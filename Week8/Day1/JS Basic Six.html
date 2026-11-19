@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f7fb">
+    <title>People Directory</title>
+    <link rel="stylesheet" href="./JS%20Basic%20Six.css">
+    <script src="./JS%20Basic%20Six.js" defer></script>
+</head>
+<body>
+    <main class="page-shell">
+        <section class="directory-card" aria-labelledby="page-title">
+            <header class="page-header">
+                <div class="brand-mark" aria-hidden="true">PD</div>
+                <p class="brand-name">PEOPLE DIRECTORY</p>
+            </header>
+
+            <div class="intro">
+                <p class="eyebrow">A simple JavaScript table</p>
+                <h1 id="page-title">People <span>at a glance</span></h1>
+                <p class="description">A clear overview of names, ages, and cities.</p>
+            </div>
+
+            <section class="directory" aria-labelledby="directory-title">
+                <div class="directory-heading">
+                    <div>
+                        <h2 id="directory-title">Directory</h2>
+                        <p>Sample contact details</p>
+                    </div>
+                    <span id="people-count" class="count-badge" aria-live="polite"></span>
+                </div>
+
+                <div class="table-scroll">
+                    <table id="people-table">
+                        <caption class="sr-only">People listed by name, age, and city</caption>
+                    </table>
+                </div>
+            </section>
+
+            <footer class="page-footer">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>Directory loaded successfully</span>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
