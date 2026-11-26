@@ -3,46 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f4f7fb">
-    <title>People Directory</title>
-    <link rel="stylesheet" href="./JS%20Basic%20Six.css">
-    <script src="./JS%20Basic%20Six.js" defer></script>
+    <title>Document</title>
 </head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin: 30px;
+    }
+    h1{
+        text-align: center;
+        color: #333;
+        font-size: 3em;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+
+    }
+    th, td{
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        font-size: 2em;
+    }
+    th{
+        background-color: black;
+        color: white;
+    }
+    thead{
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    tbody tr:nth-child(even){
+        background-color: #f9f9f9;
+    }
+    tfoot{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    td:hover{
+        background-color:blue;
+    }
+</style>
 <body>
-    <main class="page-shell">
-        <section class="directory-card" aria-labelledby="page-title">
-            <header class="page-header">
-                <div class="brand-mark" aria-hidden="true">PD</div>
-                <p class="brand-name">PEOPLE DIRECTORY</p>
-            </header>
+    <h1>Student Information Table</h1>
 
-            <div class="intro">
-                <p class="eyebrow">A simple JavaScript table</p>
-                <h1 id="page-title">People <span>at a glance</span></h1>
-                <p class="description">A clear overview of names, ages, and cities.</p>
-            </div>
+    <div id="tablecontainer" ></div>
 
-            <section class="directory" aria-labelledby="directory-title">
-                <div class="directory-heading">
-                    <div>
-                        <h2 id="directory-title">Directory</h2>
-                        <p>Sample contact details</p>
-                    </div>
-                    <span id="people-count" class="count-badge" aria-live="polite"></span>
-                </div>
+    <script>
+    // 1. Create table elements
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    const tbody = document.createElement('tbody');
+    const tfoot = document.createElement('tfoot');
 
-                <div class="table-scroll">
-                    <table id="people-table">
-                        <caption class="sr-only">People listed by name, age, and city</caption>
-                    </table>
-                </div>
-            </section>
+    // 2. Append sections to table
+    table.appendChild(thead);
+    table.appendChild(tbody);
+    table.appendChild(tfoot);
 
-            <footer class="page-footer">
-                <span class="status-dot" aria-hidden="true"></span>
-                <span>Directory loaded successfully</span>
-            </footer>
-        </section>
-    </main>
+    // 3. Append table to HTML container
+    document.getElementById('tablecontainer').appendChild(table);
+
+    // 4. Create table header
+    const headerRow = document.createElement('tr');
+
+    const columnNames = ['Name', 'Age', 'City'];
+
+    columnNames.forEach(name => {
+        const th = document.createElement('th');
+        th.innerText = name;
+        headerRow.appendChild(th);
+    });
+
+    thead.appendChild(headerRow);
+
+    // 5. Create data
+    const data = [
+        { name: 'John', age: 30, city: 'New York' },
+        { name: 'Jane', age: 25, city: 'Los Angeles' },
+        { name: 'Mike', age: 35, city: 'Chicago' }
+    ];
+
+    // 6. Insert data into table body
+    data.forEach(item => {
+        const row = document.createElement('tr');
+
+        const nameCell = document.createElement('td');
+        nameCell.innerText = item.name;
+        row.appendChild(nameCell);
+
+        const ageCell = document.createElement('td');
+        ageCell.innerText = item.age;
+        row.appendChild(ageCell);
+
+        const cityCell = document.createElement('td');
+        cityCell.innerText = item.city;
+        row.appendChild(cityCell);
+
+        tbody.appendChild(row);
+    });
+
+    // 7. Create table footer
+    const footerRow = document.createElement('tr');
+    const footerCell = document.createElement('td');
+
+    footerCell.colSpan = 3;
+    footerCell.innerText = 'Total Students: ' + data.length;
+
+    footerRow.appendChild(footerCell);
+    tfoot.appendChild(footerRow);
+
+</script>
 </body>
 </html>
